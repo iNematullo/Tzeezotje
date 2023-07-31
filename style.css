@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --text-base: #000000;
+    --text-body: #808080;
+    --gold: #D3B47F;
+    --blue: #3A4574;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-body);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.37;
+}
+
+h4 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.11;
+}
+
+h5 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+/* .header  */
+
+.header {
+    display: flex;
+    padding: 55px 0 55px 0;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+
+.header__tel-icon {
+    margin-right: 11px;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+  
+  
+.navbar{
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+}
+
+  .header__tel {
+    order: 3;
+}
+  
+  
+.menu-items li+li {
+  margin-left: 45px;
+}
+.navbar a{
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: var(--gold);
+}
+  
+
+
+
+.hero {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.51) 100%), url(img/hero-banner.jpeg), lightgray 50%;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -165px;
+    padding-top: 165px;
+}
+.hero__text {
+    padding-top: 100px;
+}
+.hero__text p {
+    color: var(--white);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.333;
+    letter-spacing: 1.44px;
+    padding-bottom: 24px;
+}
+.hero__text h2 {
+    color: var(--white);
+    padding-bottom: 40px;
+}
+
+
+
+
+.hero__bottom {
+    padding-bottom: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.res__button {
+    padding: 38px 65px;
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.33;
+    border: var(--blue);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.res__button:hover {
+    color: var(--blue);
+    background-color: var(--white);
+    border: var(--blue);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.hero__social a+a {
+    padding-left: 25px;
+}
+.hero__social-icon:hover {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(44%) saturate(617%) hue-rotate(191deg) brightness(97%) contrast(93%);
+}
+
+.icon-fb {
+    background-image: url(img/fb.svg);
+}
+
+
+
+
+.msec {
+    padding: 60px 0 90px 0;
+    display: flex;
+}
+
+.msec__days {
+    padding: 20px 0;
+    border-bottom: 1px solid #E7E7E7;
+
+
+}
+.msec__days h5 {
+    color: var(--text-base);
+    padding-bottom: 10px;
+}
+
+.msec__days p {
+    color: var(--text-base);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+
+.msec__image {
+    padding-top: 20px;
+    padding-left: 34px;
+}
+
+.testimonial {
+    background-color: var(--blue);
+}
+.testimonial_inner {
+    text-align: center;
+    padding: 220px 0;
+}
+.testimonial__text{
+    padding-top: 34px;
+    max-width: 785px;
+    margin: auto;
+}
+.testimonial__text h4 {
+    color: var(--gold);
+    padding-bottom: 20px;
+}
+.testimonial__text h5 {
+    color: var(--gold);
+    line-height: 1.67;
+    letter-spacing: 5.88px;
+    padding-top: 40px;
+}
+.testimonial__text p {
+    color: var(--white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5; 
+}
+
+.bullets {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    color: var(--white);
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    color: var(--gold);
+  }
+
+/* The Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 20px 16px;
+    background-color: var(--blue);
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 20px 26px;
+  
+  }
+
+/* contact form */
+.form-top {
+    display: flex;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.form-group label {
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2; 
+    color: var(--text-base);
+}
+.form-group input {
+    padding: 28px 16px;
+    border: 1px solid #CCC;
+    width: 100%;
+    max-width: 718px;
+}
+
+
+.success {
+    display: none;
+    background: #E1F8ED;
+    padding: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    &.is-active {
+      display: block;
+    }
+  }
+
+
+
+
+/* The width is 100%, when the viewport is 800px or smaller */
+  @media screen and (max-width: 800px) {
+    .container {
+      padding: 0 20px; 
+    }
+    h2 {
+        font-size: 42px;
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 1.33;
+    }
+    h5 {
+        font-size: 18px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+    .header__tel {
+        display: none;
+    }
+
+    .hero__text p {
+        font-size: 18px;
+    }
+    .hero__bottom {
+        flex-direction: column;
+    }
+    .hero__button {
+        padding-bottom: 48px;
+    }
+    .res__button {
+        padding: 26px 36px;
+    }
+    .msec {
+        flex-direction: column;
+    }
+    .msec__image {
+        padding-left: 0;
+    }
+    .testimonial__text {
+        padding: 34px 40px;
+    }
+
+  }
+
+
+
+
+  @media (max-width: 960px){
+    .header {
+        padding: 0;
+    }
+    
+    .navbar{
+          opacity: 0.95;
+      }
+  
+      .navbar-container input[type="checkbox"],
+      .navbar-container .hamburger-lines{
+          display: block;
+      }
+  
+      .navbar-container{
+          display: block;
+          position: relative;
+          height: 64px;
+      }
+  
+      .navbar-container input[type="checkbox"]{
+          position: absolute;
+          display: block;
+          height: 32px;
+          width: 30px;
+          top: 20px;
+          left: 20px;
+          z-index: 5;
+          opacity: 0;
+          cursor: pointer;
+      }
+  
+      .navbar-container .hamburger-lines{
+          display: block;
+          height: 28px;
+          width: 35px;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+  
+      .navbar-container .hamburger-lines .line{
+          display: block;
+          height: 4px;
+          width: 100%;
+          border-radius: 10px;
+          background: var(--white);
+      }
+      
+      .navbar-container .hamburger-lines .line1{
+          transform-origin: 0% 0%;
+          transition: transform 0.3s ease-in-out;
+      }
+  
+      .navbar-container .hamburger-lines .line2{
+          transition: transform 0.2s ease-in-out;
+      }
+  
+      .navbar-container .hamburger-lines .line3{
+          transform-origin: 0% 100%;
+          transition: transform 0.3s ease-in-out;
+      }
+  
+      .navbar .menu-items{
+          padding-top: 100px;
+          background: var(--blue);
+          height: 100vh;
+          max-width: 300px;
+          transform: translate(-150%);
+          display: flex;
+          flex-direction: column;
+          margin-left: -20px;
+          padding-left: 40px;
+          transition: transform 0.5s ease-in-out;
+      }
+  
+      .navbar .menu-items li{
+          margin-bottom: 1.8rem;
+      }
+      .menu-items li+li {
+        margin-left: 0;
+      }
+  
+      .logo{
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 2.5rem;
+      }
+      
+      .header__tel {
+        display: none;
+    }
+  
+      .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+          transform: translateX(0);
+      }
+  
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+          transform: rotate(45deg);
+      }
+  
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+          transform: scaleY(0);
+      }
+  
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+          transform: rotate(-45deg);
+      }
+  
+  }
+  
+  @media (max-width: 500px){
+      .navbar-container input[type="checkbox"]:checked ~ .logo{
+          display: none;
+      }
+  }
